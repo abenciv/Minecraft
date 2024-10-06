@@ -81,9 +81,9 @@
 			groupBox1.Controls.Add(radioButtonLeaves);
 			groupBox1.Controls.Add(radioButtonGrass);
 			groupBox1.Controls.Add(radioButtonWood);
-			groupBox1.Location = new Point(684, 12);
+			groupBox1.Location = new Point(690, 12);
 			groupBox1.Name = "groupBox1";
-			groupBox1.Size = new Size(131, 123);
+			groupBox1.Size = new Size(125, 123);
 			groupBox1.TabIndex = 1;
 			groupBox1.TabStop = false;
 			groupBox1.Text = "Block";

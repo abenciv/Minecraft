@@ -160,33 +160,31 @@ namespace Minecraft
 
                 bool[] addFace = new bool[6];
 
-                //bottom
+                // bottom
                 if (/*position[2] == 0 ||*/ position[2] > 0 && _matrix3D[position[0], position[1], position[2] - 1] == 0)
                 {
                     addFace[0] = true;
                 }
 
-                //front
+                // front
                 if (position[1] == 0 || position[1] > 0 && _matrix3D[position[0], position[1] - 1, position[2]] == 0)
                 {
                     addFace[1] = true;
                 }  
 
-                //right
+                // right
                 if (position[0] == MatrixWidth - 1 || position[0] < MatrixWidth-1 && _matrix3D[position[0]+1, position[1], position[2]] == 0)
                 {
                     addFace[2] = true;
-
                 }
 
-                //rear
+                // rear
                 if (position[1] == MatrixDepth - 1 || position[1] < MatrixDepth - 1 && _matrix3D[position[0], position[1] + 1, position[2]] == 0)
                 {
                     addFace[3] = true;
-
                 }
 
-                //left
+                // left
                 if (position[0] == 0 || position[0] > 0 &&_matrix3D[position[0] - 1, position[1], position[2]] == 0)
                 {
                     addFace[4] = true;
